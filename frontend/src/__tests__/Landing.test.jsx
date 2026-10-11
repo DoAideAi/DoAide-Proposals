@@ -71,7 +71,7 @@ describe('Landing', () => {
   it('renders footer with DoAide products', () => {
     renderLanding();
     expect(screen.getByText('DoAide Products')).toBeInTheDocument();
-    expect(screen.getByText('doaide.com')).toBeInTheDocument();
+    expect(screen.getByText('A DoAide Product')).toBeInTheDocument();
   });
 
   it('renders free tools section', () => {

@@ -17,12 +17,12 @@ function StepIndicator({ current, steps }) {
             style={{
               height: 4,
               borderRadius: 2,
-              background: i <= current ? "#F0B429" : "rgba(255,255,255,0.1)",
+              background: i <= current ? "#0D9488" : "rgba(255,255,255,0.1)",
               marginBottom: "0.35rem",
               transition: "background 0.2s",
             }}
           />
-          <span style={{ fontSize: "0.75rem", color: i <= current ? "#F0B429" : "#6B7280" }}>{s}</span>
+          <span style={{ fontSize: "0.75rem", color: i <= current ? "#0D9488" : "#6B7280" }}>{s}</span>
         </div>
       ))}
     </div>
@@ -153,8 +153,8 @@ export default function ProposalBuilderPage() {
                     <p style={{ margin: "0.25rem 0 0", fontSize: "0.85rem", color: "#9CA3AF" }}>{t.description}</p>
                   </button>
                 ))}
-                <button className="calc-card" onClick={startBlank} style={{ cursor: "pointer", textAlign: "left", border: "1px dashed rgba(240,180,41,0.4)" }}>
-                  <strong style={{ color: "#F0B429", fontSize: "1rem" }}>Start from Scratch</strong>
+                <button className="calc-card" onClick={startBlank} style={{ cursor: "pointer", textAlign: "left", border: "1px dashed rgba(13,148,136,0.4)" }}>
+                  <strong style={{ color: "#0D9488", fontSize: "1rem" }}>Start from Scratch</strong>
                   <p style={{ margin: "0.25rem 0 0", fontSize: "0.85rem", color: "#9CA3AF" }}>Build your own proposal with custom sections.</p>
                 </button>
               </div>
@@ -229,7 +229,7 @@ export default function ProposalBuilderPage() {
                   />
                 </div>
               ))}
-              <button onClick={addSection} style={{ background: "none", border: "1px dashed rgba(240,180,41,0.4)", color: "#F0B429", padding: "0.5rem 1rem", borderRadius: 8, cursor: "pointer", fontSize: "0.85rem", width: "100%" }}>
+              <button onClick={addSection} style={{ background: "none", border: "1px dashed rgba(13,148,136,0.4)", color: "#0D9488", padding: "0.5rem 1rem", borderRadius: 8, cursor: "pointer", fontSize: "0.85rem", width: "100%" }}>
                 + Add Section
               </button>
               <div style={{ display: "flex", gap: "0.75rem", marginTop: "1rem" }}>
@@ -262,7 +262,7 @@ export default function ProposalBuilderPage() {
                     </button>
                   </div>
                 ))}
-                <button onClick={addPricingItem} style={{ background: "none", border: "1px dashed rgba(240,180,41,0.4)", color: "#F0B429", padding: "0.4rem 1rem", borderRadius: 6, cursor: "pointer", fontSize: "0.85rem" }}>
+                <button onClick={addPricingItem} style={{ background: "none", border: "1px dashed rgba(13,148,136,0.4)", color: "#0D9488", padding: "0.4rem 1rem", borderRadius: 6, cursor: "pointer", fontSize: "0.85rem" }}>
                   + Add Line Item
                 </button>
 
@@ -310,7 +310,7 @@ export default function ProposalBuilderPage() {
             <div>
               <h2 style={{ fontSize: "1.1rem", color: "#fff", marginBottom: "1rem" }}>Review & Download</h2>
               <div className="calc-card">
-                <h3 style={{ color: "#F0B429", margin: "0 0 0.5rem", fontSize: "1.2rem" }}>{title || "Untitled Proposal"}</h3>
+                <h3 style={{ color: "#0D9488", margin: "0 0 0.5rem", fontSize: "1.2rem" }}>{title || "Untitled Proposal"}</h3>
                 {businessName && <p style={{ margin: "0 0 0.25rem", fontSize: "0.9rem", color: "#9CA3AF" }}>From: {businessName} {businessEmail && `(${businessEmail})`}</p>}
                 {(clientName || clientCompany) && <p style={{ margin: "0 0 1rem", fontSize: "0.9rem", color: "#9CA3AF" }}>To: {clientName} {clientCompany && `at ${clientCompany}`}</p>}
 

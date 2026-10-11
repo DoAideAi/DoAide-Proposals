@@ -101,36 +101,36 @@ export default function GeneratorPage() {
                 </h3>
 
                 <div style={{ marginBottom: "1rem" }}>
-                  <strong style={{ color: "var(--brand, #F0B429)" }}>Executive Summary</strong>
+                  <strong style={{ color: "var(--brand, #0D9488)" }}>Executive Summary</strong>
                   <p style={{ margin: "0.25rem 0 0", fontSize: "0.9rem", color: "var(--ink-soft, #9CA3AF)" }}>{result.executive}</p>
                 </div>
 
                 <div style={{ marginBottom: "1rem" }}>
-                  <strong style={{ color: "var(--brand, #F0B429)" }}>Project Scope</strong>
+                  <strong style={{ color: "var(--brand, #0D9488)" }}>Project Scope</strong>
                   <ul style={{ margin: "0.25rem 0 0", paddingLeft: "1.25rem", fontSize: "0.9rem", color: "var(--ink-soft, #9CA3AF)" }}>
                     {result.scope.map((s, i) => <li key={i}>{s}</li>)}
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: "1rem" }}>
-                  <strong style={{ color: "var(--brand, #F0B429)" }}>Deliverables</strong>
+                  <strong style={{ color: "var(--brand, #0D9488)" }}>Deliverables</strong>
                   <ul style={{ margin: "0.25rem 0 0", paddingLeft: "1.25rem", fontSize: "0.9rem", color: "var(--ink-soft, #9CA3AF)" }}>
                     {result.deliverables.map((d, i) => <li key={i}>{d}</li>)}
                   </ul>
                 </div>
 
                 <div style={{ marginBottom: "1rem" }}>
-                  <strong style={{ color: "var(--brand, #F0B429)" }}>Timeline &amp; Milestones</strong>
+                  <strong style={{ color: "var(--brand, #0D9488)" }}>Timeline &amp; Milestones</strong>
                   <p style={{ margin: "0.25rem 0 0", fontSize: "0.9rem", color: "var(--ink-soft, #9CA3AF)" }}>{result.timeline}</p>
                 </div>
 
                 <div style={{ marginBottom: "1rem" }}>
-                  <strong style={{ color: "var(--brand, #F0B429)" }}>Budget Breakdown</strong>
+                  <strong style={{ color: "var(--brand, #0D9488)" }}>Budget Breakdown</strong>
                   <p style={{ margin: "0.25rem 0 0", fontSize: "0.9rem", color: "var(--ink-soft, #9CA3AF)" }}>{result.budget}</p>
                 </div>
 
                 <div style={{ marginBottom: "0.5rem" }}>
-                  <strong style={{ color: "var(--brand, #F0B429)" }}>Terms &amp; Conditions</strong>
+                  <strong style={{ color: "var(--brand, #0D9488)" }}>Terms &amp; Conditions</strong>
                   <p style={{ margin: "0.25rem 0 0", fontSize: "0.9rem", color: "var(--ink-soft, #9CA3AF)" }}>{result.terms}</p>
                 </div>
 

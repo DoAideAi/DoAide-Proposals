@@ -14,7 +14,7 @@ export default function ToolsNav() {
   return (
     <nav className="tools-nav" aria-label="Proposal tools">
       <a href="https://proposals.doaide.com" className="tools-nav-brand">
-        DoAide <em>Proposals</em>
+        DoAide <em>| Proposals</em>
       </a>
       <div className="tools-nav-links">
         {TOOLS.map((t) => (

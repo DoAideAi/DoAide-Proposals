@@ -4,7 +4,7 @@ const ThemeContext = createContext(null);
 
 function getInitialTheme() {
   try {
-    return localStorage.getItem('theme') || 'system';
+    return localStorage.getItem('theme') || 'light';
   } catch {
     return 'system';
   }

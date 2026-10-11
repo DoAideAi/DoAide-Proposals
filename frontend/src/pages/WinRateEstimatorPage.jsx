@@ -21,7 +21,7 @@ export default function WinRateEstimatorPage() {
   const winRate = Math.round((weightedScore / totalWeight) * 100);
 
   const ratingLabel = winRate >= 70 ? "Strong" : winRate >= 40 ? "Moderate" : "Low";
-  const ratingColor = winRate >= 70 ? "#22c55e" : winRate >= 40 ? "#F0B429" : "#ef4444";
+  const ratingColor = winRate >= 70 ? "#22c55e" : winRate >= 40 ? "#0D9488" : "#ef4444";
 
   return (
     <div className="tool-page">

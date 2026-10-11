@@ -27,8 +27,8 @@ export default function Login() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 dark:bg-gray-900 px-4">
       <div className="w-full max-w-md">
         <div className="text-center mb-8">
-          <Link to="/" className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-            DoAide Proposals
+          <Link to="/" className="text-2xl font-bold text-[#0D9488] no-underline">
+            DoAide <span className="text-gray-400 font-normal mx-0.5">|</span> <span className="text-gray-900 dark:text-white">Proposals</span>
           </Link>
         </div>
         <form

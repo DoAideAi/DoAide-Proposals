@@ -37,8 +37,8 @@ export default function Pricing() {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-primary-600 dark:text-primary-400">
-          DoAide Proposals
+        <Link to="/" className="text-2xl font-bold text-[#0D9488] no-underline">
+          DoAide <span className="text-gray-400 font-normal mx-0.5">|</span> <span className="text-gray-900 dark:text-white">Proposals</span>
         </Link>
         <Link to="/login" className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
           Login

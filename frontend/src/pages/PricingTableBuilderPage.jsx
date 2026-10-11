@@ -109,7 +109,7 @@ export default function PricingTableBuilderPage() {
               </table>
             </div>
 
-            <button onClick={addItem} style={{ background: "none", border: "1px dashed rgba(240,180,41,0.4)", color: "#F0B429", padding: "0.4rem 1rem", borderRadius: 6, cursor: "pointer", fontSize: "0.85rem", marginTop: "0.75rem" }}>
+            <button onClick={addItem} style={{ background: "none", border: "1px dashed rgba(13,148,136,0.4)", color: "#0D9488", padding: "0.4rem 1rem", borderRadius: 6, cursor: "pointer", fontSize: "0.85rem", marginTop: "0.75rem" }}>
               + Add Line Item
             </button>
           </div>
