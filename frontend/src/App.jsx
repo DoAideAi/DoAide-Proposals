@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Protected from './components/Protected';
 import Layout from './components/Layout';
 import Landing from './pages/Landing';
@@ -24,8 +24,10 @@ import WinRateEstimatorPage from './pages/WinRateEstimatorPage';
 import PricingCalculatorPage from './pages/PricingCalculatorPage';
 import ProposalBuilderPage from './pages/ProposalBuilderPage';
 import PricingTableBuilderPage from './pages/PricingTableBuilderPage';
+import useSEO from './hooks/useSEO';
 
 export default function App() {
+  useSEO(useLocation().pathname.replace(/\/+$/, '') || '/');
   return (
     <Routes>
       <Route path="/" element={<Landing />} />

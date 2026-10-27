@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import { MemoryRouter } from "react-router-dom";
+import { MemoryRouter, Route, Routes } from "react-router-dom";
 import { describe, it, expect, vi } from "vitest";
 
 vi.mock("../hooks/usePageTitle", () => ({ usePageTitle: vi.fn() }));
@@ -59,5 +59,30 @@ describe("Blog articles", () => {
       </MemoryRouter>
     );
     expect(screen.getByRole("heading", { level: 1 })).toBeInTheDocument();
+  });
+});
+
+describe("BlogLayout headings", () => {
+  const renderAt = (path) =>
+    render(
+      <MemoryRouter initialEntries={[path]}>
+        <Routes>
+          <Route path="/blog" element={<BlogLayout />}>
+            <Route index element={<p>index</p>} />
+            <Route path="post" element={<h1>Post title</h1>} />
+          </Route>
+        </Routes>
+      </MemoryRouter>
+    );
+
+  it("uses the blog name as the h1 on the index", () => {
+    renderAt("/blog");
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("DoAide Proposals Blog");
+  });
+
+  it("leaves the only h1 to the post on article pages", () => {
+    renderAt("/blog/post");
+    expect(screen.getAllByRole("heading", { level: 1 })).toHaveLength(1);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Post title");
   });
 });
